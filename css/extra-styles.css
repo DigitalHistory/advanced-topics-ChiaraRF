@@ -7,16 +7,28 @@
 
 /* We start with the spatial history assignment */
 
+div#essay {
+  float: left;
+  padding-top: 5%;
+}
+
+div.markers {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 /* add any styling for the main div here */
 div.container {
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 div#mapcontainer {
   font-family:Arial, sans-serif;
   font-size:11px;
   border:6px double #5E5C63;
-  width:66%;
-  float:left;
+  width: 80%;
+  float: left;
 }
 
 /* you can change the size of the map here if you want you can even
@@ -24,20 +36,30 @@ div#mapcontainer {
    width be set by the containing element, but constrain the height
 */
 div#map_canvas {
-  height:80vh;                  /*80 % of the viewport height*/
+  height: 75vh;                  /*80 % of the viewport height*/
 }
 
 /* this is the legend div. Can you make it into a right sidebar? you may
 have to add some extra css to the mapcontainer div */
 div#map_legend {
-    max-width:30%;
-    float:left;
+    width:20%;
+    float: left;
+    padding-left: 2%;
 }
 
 /* if you want, you can make the text in the legend less ugly by adding
 extra css classes. Advisable! */
-div#map_legend h1, div#map_legend h3 {
+div#map_legend h1 {
+  font-size: 1em;
+  text-decoration: underline;
+}
 
+div#map_legend h3 {
+  font-size: 0.75em;
+}
+
+div#map_legend p {
+  font-size: 0.5em;
 }
 
 // make it obvious that the legend text is clickable
@@ -50,17 +72,18 @@ div.pointer {
   rounded".  button#hide meands "the button with the
   id of hide"
 */
-button.rounded {
+button.markers.rounded {
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
-  border-radius:5px;
+  border-radius:10px;
   border: 1px black solid;
+  color: black;
 }
-button#hide {
-  background:orange;
+button#blue {
+  background: #b3e0ff;
 }
-button#show {
-  background:green;
+button#red {
+  background: #ffb3b3;
 }
 
 /* use these last three to style the text inside the
@@ -69,8 +92,8 @@ button#show {
 
 */
 
-div#map_canvas h1 {
-
+div#map_canvas h3 {
+  font-size: 1em;
 }
 
 div.address  {
@@ -82,10 +105,12 @@ div.description {
 }
 
 div.gm-style-iw {
-    max-height: 75px;
+  max-width: 80%;
 }
+
 div.gm-style-iw img {
-    max-width: 75% !important;
+    max-width: 100% !important;
+    padding-bottom: 5%;
 }
 
 div.gm-style-iw blockquote {
@@ -117,4 +142,3 @@ div.gm-style-iw blockquote {
    background-color: #F4F4F4;
    padding: 10px;
 }
-
