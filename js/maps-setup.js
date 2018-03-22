@@ -3,11 +3,11 @@
 // whenever we need to -- they have 'global scope'
 var my_map; // this will hold the map
 var my_map_options; // this will hold the options we'll use to create the map
-var my_center = new google.maps.LatLng(41.8986,12.4768); // center of map
+var my_center = new google.maps.LatLng(44.260059, -72.575387); // center of map
 var my_markers = []; // we use this in the main loop below to hold the markers
 // this one is strange.  In google maps, there is usually only one
 // infowindow object -- its content and position change when you click on a
-// marker.  This is counterintuitive, but we need to live with it.  
+// marker.  This is counterintuitive, but we need to live with it.
 var infowindow = new google.maps.InfoWindow({content: ""});
 var legendHTML = "<h1>Legend</h1>";
 
@@ -21,7 +21,7 @@ var blue_markers = [];
 // this is for fun, if you want it.  With this powerful feature you can add arbitrary
 // data layers to your map.  It's cool. Learn more at:
 // https://developers.google.com/maps/documentation/javascript/datalayer#load_geojson
-var myGeoJSON= {
+/* var myGeoJSON= {
   "type":"FeatureCollection",
   "features":
   [{"type":"Feature",
@@ -39,14 +39,14 @@ var myGeoJSON= {
                                  [-101.6015625,51.944264879028765],[-112.32421875,58.263287052486035],
                                  [-113.203125,58.35563036280967]]]
                 }}]};
-
+*/
 
 /* a function that will run when the page loads.  It creates the map
  and the initial marker.  If you want to create more markers, do it here. */
 function initializeMap() {
     my_map_options = {
         center:  my_center, // to change this value, change my_center above
-        zoom: 13,  // higher is closer-up
+        zoom: 5,  // higher is closer-up
         mapTypeId: google.maps.MapTypeId.HYBRID // you can also use TERRAIN, STREETMAP, SATELLITE
     };
 
@@ -55,26 +55,37 @@ function initializeMap() {
                                  my_map_options);
     // this is an *array* that holds all the marker info
     var all_my_markers =
-            [{position: new google.maps.LatLng(41.9000,12.5000),
+            [{position: new google.maps.LatLng(43.634722, -79.395819),
               map: my_map,
-              icon: blueURL, // this sets the image that represents the marker in the map to the one
+              icon: redURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
-              title: "first Marker",
-              window_content: "<h1>Marker1</h1><p> and this would be the extended description</p>"
-             },
-             {position: new google.maps.LatLng(41.8902,12.4923),
+              title: "Ireland Park",
+              window_content: "<h3>Ireland Park</h3><p>Toronto, ON (2007)</p><img src='http://irelandparkfoundation.com/wp-content/uploads/sculpture-rollover.jpg'/>"},
+             {position: new google.maps.LatLng(45.486800, -73.546355),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
-              title: "second Marker",
-              window_content: "<h1>Marker2</h1><p> and <a href='http://something'>this would</a> be the extended description</p>"
-            },
-            {position: new google.maps.LatLng(41.8986,12.4768),
-             map: my_map,
-             icon: redURL, // this sets the image that represents the marker in the map
-             title: "third Marker",
-             window_content: '<h1>Marker3</h1><img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
-             '<blockquote>quote quote quote quote</blockquote>'
-           }
+              title: "Irish Commemorative Stone",
+              window_content: "<h3>Irish Commemorative Stone</h3><p>Montreal, QC (1913)</p><img src='https://www.irishcentral.com/uploads/article/121054/cropped_cropped_Rock_Montreal_Famine_dead.jpg'/>"},
+             {position: new google.maps.LatLng(47.028460, -70.671372),
+              map: my_map,
+              icon: blueURL, // this sets the image that represents the marker in the map
+              title: "Grosse Île and the Irish Memorial National Historic Site",
+              window_content: "<h3>Grosse Île and the Irish Memorial National Historic Site</h3><p>Grosse Ile, QC (1909)</p><img src='https://www.quebecoriginal.com/en/listing/images/800x600/4cc47167-d361-4885-a232-57fdef2d3d59/grosse-ile-cruise-photo.jpg'/>"},
+             {position: new google.maps.LatLng(39.947846, -75.142029),
+              map: my_map,
+              icon: redURL, // this sets the image that represents the marker in the map
+              title: "Philadelphia Irish Memorial",
+              window_content: "<h3>Philadelphia Irish Memorial</h3><p>Philadelphia, PA (2003)</p><img src='https://commemoratingfamine.files.wordpress.com/2014/01/philadelphia_2.jpg'/>"},
+             {position: new google.maps.LatLng(42.357357,-71.058598),
+              map: my_map,
+              icon: redURL, // this sets the image that represents the marker in the map
+              title: "Boston Irish Famine Memorial",
+              window_content: "<h3>Boston Irish Famine Memorial</h3><p>Boston, MA (1998)</p><img src='https://commemoratingfamine.files.wordpress.com/2014/01/boston_1.jpg'/>"},
+             {position: new google.maps.LatLng(45.239206, -66.053827),
+              map: my_map,
+              icon: blueURL,
+              title: "Partridge Island Quarantine Station National Historic Site",
+              window_content: "<h3>Partridge Island Quarantine Station National Historic Site</h3><p>Partridge Island, NB (1927)</p><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Partridge_Island_New_Brunswick_Canada.jpg/1200px-Partridge_Island_New_Brunswick_Canada.jpg'/>"}
             ];
 
     for (j = 0; j < all_my_markers.length; j++) {
@@ -86,10 +97,10 @@ function initializeMap() {
             window_content: all_my_markers[j].window_content});
 
         // this next line is ugly, and you should change it to be prettier.
-        // be careful not to introduce syntax errors though.  
+        // be careful not to introduce syntax errors though.
       legendHTML +=
         "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
-          marker.window_content + "</div>";
+          marker.title + "<br><br>" + "</div>";
         marker.info = new google.maps.InfoWindow({content: marker.window_content});
         var listener = google.maps.event.addListener(marker, 'click', function() {
             // if you want to allow multiple info windows, uncomment the next line
@@ -104,7 +115,7 @@ function initializeMap() {
         } else if (all_my_markers[j].icon == redURL ) {
             red_markers.push({marker:marker, listener:listener});
         }
-        
+
     }
     document.getElementById("map_legend").innerHTML = legendHTML;
   my_map.data.addGeoJson(myGeoJSON);
@@ -116,7 +127,7 @@ function initializeMap() {
     fillColor: '#FF0000',
     fillOpacity: 0.35,
     // in general, we always have to *set the map* when we
-    // add features. 
+    // add features.
     map: my_map,
     bounds: {
       north: 42.685,
@@ -127,7 +138,7 @@ function initializeMap() {
 
     center: {"lat": 41.9000, "lng":12.5000},
     radius: 1000
-  });  
+  });
   my_map.data.setStyle(function (feature) {
     var thisColor = feature.getProperty("myColor");
     return {
@@ -172,7 +183,7 @@ function toggleMarkers (marker_array, map) {
 
 
 // I added this for fun.  It allows you to trigger the infowindow
-// from outside the map.  
+// from outside the map.
 function locateMarker (marker) {
     console.log(marker);
     my_map.panTo(marker.marker.position);

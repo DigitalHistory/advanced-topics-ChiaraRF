@@ -1,28 +1,11 @@
-# This Map Should Deal with a Historical Topic You Care About
-
-Your first task will be to locate some real places.  You can get the precise locations at various services, e.g [latlong.net](http://www.latlong.net/).
-
-Then add those places to the marker array in [../js/maps-setup.js](../js/maps-setup.js) (see instructions there).
-
-replace this text and the text with your essay. But be sure not to eliminate the html elements that
-are contained inside this textarea, or [your map won't work at all!][1] [1](#one)
-<figure>
-![](https://upload.wikimedia.org/wikipedia/commons/a/ab/Lolcat_in_folder.jpg "this is the alt text")<figcaption>caption</figcaption>
-</figure>
-It makes sense to put an introductory paragraph here, above the map and buttons. To change the bootswatch thenme, change "united" to one of the other theme names listed at [strapdownjs.com](http://strapdownjs.com/).
-
-[1]: http://hello.com
-[^1]: This is my first footnote
-
-<a id="#one">1: </a> some text here
-
+In the middle of the nineteenth century, Ireland was struck by a series of complete and partial crop failures which ultimately cost the country a quarter of her population. In just seven years, from 1845 to 1852, one million people died from starvation and disease while another million left their homeland permanently. ([Mark-Fitzgerald, p. 1](https://search.library.utoronto.ca/details?9100433)) Those who fled the effects of the Great Famine often went to cities in the United Kingdom, the United States of America, Canada and Australia and quickly began to adapt to life in their adopted homes, often having a profound impact on the society of these cities. Unsurprisingly, these newly established Irish communities did not forget the event which sparked their migration and memorials to the Famine have been erected in each of these locations. ([Mark-Fitzgerald, Appendix](https://search.library.utoronto.ca/details?9100433)) There is not, however, a universal format for commemorating the tragedy and each community’s experience of the Famine is reflected in their choice of monument. By analysing the differences between these monuments – particularly those in the North Eastern United States and Canada – and the histories they represent, we can see how geographic location impacts the development of the dominant migrant experience.
 
 <div class="markers">
   <!-- these buttons hide/show all the markers  -->
   <!-- to hide/show blue or red markers instead, change my_markers below to blue_markers
        to red_markers.  If you have defined your own color (or other) arrays, use those instead -->
-  <button onclick="toggleMarkers(my_markers, my_map)" class="rounded" id="hide">Toggle markers</button>
-  <button onclick="showMarkers(my_markers, my_map)" id="show"> show markers</button>
+  <button onclick="toggleMarkers(blue_markers, my_map)" class="rounded" id="blue">Toggle Blue Markers</button>
+  <button onclick="toggleMarkers(red_markers, my_map)" class="rounded" id="red">Toggle Red Markers</button>
 </div>
   <div id="mapcontainer">
     <div id="map_canvas"></div>
@@ -30,10 +13,27 @@ It makes sense to put an introductory paragraph here, above the map and buttons.
   <div id="map_legend"></div>
 </div>
 
-# Next Section
-
-The rest of your essay should go under the map, probably.
-
-## in sections like this
-also _italics_ and __bold__ which can also be written *like this* or **like this**
-etc. Be sure to [make use of links](http://digital.hackinghistory.ca) -- that's one of the reasons we write on the Web, and I've asked you to use links for all yor footnotes/references as well.  
+<div id="essay">
+While the memorial park in downtown Toronto features a poignant reminder – in the form of a monolithic wall of names – of the hundreds who died in city hospitals, its primary emphasis is the future of the migrants who survived their voyage and who now hoped to settle in the city or its surrounds. <a href="https://irishfaminememorials.com/2014/01/16/toronto-ontario-2007/">(Mark-Fitzgerald, Toronto)</a> The sculpted figures depict the range of emotions which new arrivals might have experienced – fear, hope and gratitude – and the inclusion of a pregnant woman among them offers hope for a new life in Canada. <a href="http://irelandparkfoundation.com/famine-memorial/sculptures/">(Gillespie)</a> Similarly, the memorial park in Boston emphasises the journey taken by the migrants and their eventual “triumph over adversity” in the United States.<a href="https://irishfaminememorials.com/2014/01/16/boston-massachusetts-1998/">(Mark-Fitzgerald, Boston)</a> The first of the park’s two statues depicts a family suffering from the effects of starvation in Ireland, while the second highlights the prosperity of the successful Irish-American immigrant, a theme which is reinforced by eight narrative plaques, featuring headings such as “The American Dream.” Although more subtle in its display of the theme, a third memorial site in Philadelphia follows a similar approach.<a href="https://irishfaminememorials.com/2014/01/16/philadelphia-pennsylvania-2003/">(Mark-Fitzgerald, Philadelphia)</a> The front of this massive monument depicts a field in Ireland and a number of gaunt figures, while its rear takes the form of a ship and shows a number of migrants disembarking. While the symbology of the statue emphasises the emigrant journey, it is the informational panels which truly shift the focus of the monument from the tragedy of the Famine to the experience of the Irish-American immigrant. Several panels emphasise the contributions of the Irish to the society of Philadelphia and of the United States in general. One panel in particular is entitled “The Irish in America” and references former President John F. Kennedy as a shining symbol of the success of the Famine generation and its descendants.
+<br><br>
+In stark contrast are the memorials at the quarantine stations of Grosse Île and Partridge Island, located on islands off the coast of Quebec City and Saint John, respectively. Both monuments take the form of a high cross which is traditionally used to denote an Irish grave and mark the sites of mass graves where typhus victims are buried.<a href="https://search.library.utoronto.ca/details?9100433">(Mark-Fitzgerald, p. 174)</a> Both monuments were also established long before the other memorials discussed in this paper, although a modern memorial which expresses similar sentiments has now been erected on Grosse Île as well.<a href="https://irishfaminememorials.com/2014/01/16/grosse-ile-quebec-1998/">(Mark-Fitzgerald, Grosse Île)</a> The choice of location and the funerary style of the monuments both work to emphasise the unfortunate fate of so many migrants who found themselves on the shores of these cities but unable to continue their voyage. Similarly, the Famine memorial in Montreal is situated near the alleged site of the mass graves used to bury typhus victims in that city, although there is some contention over its exact location.<a href="https://doi-org.myaccess.library.utoronto.ca/10.1080/095023602761622342">(McMahon, p. 51)</a> This monument takes the form of a giant boulder bearing an inscription which commemorates the victims of the Famine who lie buried beneath it. Although it does not follow the funerary style of the other two monuments, the sentiments it expresses are the same and again it focuses only on those who died in the tragedy, ignoring the many immigrants who lived on to become important figures in local and national history.
+<br><br>
+While passage to the United Kingdom could be secured with relative ease by all but the most destitute, a cabin ticket to North America was much more difficult to afford and most who made the journey across the Atlantic Ocean travelled steerage. On Canadian ships, in particular, these migrants travelled in shared 6-foot square bunks constructed in the cargo hold of ships which had been designed to transport lumber from Canadian forests to the English market. <a href="https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4006359">(Rees, p. 44)</a> The conditions on board these ships were atrocious and typhus – or ‘ship fever’ as it was known was extremely common. Many of the passengers who travelled in this manner died at sea and even more died in the quarantine stations and hospitals of Quebec City and Saint John. These were among the first British ports a vessel would reach and were both highly involved in the lumber trade. Here, the newly arrived immigrants would undergo health checks and only those who were deemed to be healthy were permitted to disembark. Appearing healthy did not, however, mean that a passenger had not contracted the disease and many of those who were allowed to continue onwards died in the fever sheds of Montreal, the next major port along the St. Lawrence River. <a href="http://www.nlc-bnc.ca/obj/008004/f2/E-30_en.pdf">(McGowan, p. 4)</a> Montreal, Quebec City and Saint John often served as interim stops in a longer journey where Toronto or the USA was the final destination. By the time the migrants reached these destinations, many of the dead and dying had been left behind in graveyards and hospitals along the way and, as a result, disease outbreaks occurred on a much smaller scale. This effect was compounded in the United States by strictly enforced regulations which guaranteed passengers a safer and more comfortable passage, but which also increased the cost of a ticket to an American port. <a href="https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4006359">(Rees, p. 54)</a> This meant that many of those who ended up in American cities such as Boston and Philadelphia had travelled via one or more of the Canadian ports. As demonstrated above, these differences in experience are highlighted in the memorials chosen by each city to remember the tragic events of the Great Famine with both American cities and Toronto (indicated in red on the map above) choosing to emphasise the future of the immigrants rather than the fate of those who died in transit and the other three cities (indicated in blue on the map above) opting for funerary style monuments which commemorate only the migrant dead. We can see, therefore, that the geographic location and the political landscape of these cities impacted their experience of the Famine migration and the dominant narrative of the event which survives in each region today.
+<br><br>
+Sources:
+<br><br>
+Gillespie, Rowan. "A Word From the Sculptor Rowan Gillespie." <a href="http://irelandparkfoundation.com/famine-memorial/sculptures/">http://irelandparkfoundation.com/famine-memorial/sculptures/</a>
+<br><br>
+Kelleher, Margaret. <a href="https://doi-org.myaccess.library.utoronto.ca/10.1080/095023602761622342">"Hunger and History: Monuments to the Great Irish Famine."</a> <em>Textual Practice</em> 16 no. 2 (January 2002): 249-276.
+<br><br>
+Mark-Fitzgerald, Emily. <em><a href="https://search.library.utoronto.ca/details?9100433">Commemorating the Irish Famine: Memory and the Monument.</a></em> Liverpool: Liverpool University Press, 2013.
+<br><br>
+Mark-Fitzgerald, Emily. "Irish Famine Memorials." Accessed 10th March 2018. <a href="https://irishfaminememorials.com">https://irishfaminememorials.com</a>
+<br><br>
+McGowan, Mark G. <em><a href="http://www.nlc-bnc.ca/obj/008004/f2/E-30_en.pdf">Creating Canadian Historical Memory: The Case of the Irish Famine Migration of 1847.</a></em> Ottawa: Canadian Historical Association, 2006.
+<br><br>
+McMahon, Colin. <a href="https://doi-org.myaccess.library.utoronto.ca/10.1080/095023602761622342">"Montreal's Ship Fever Monument: An Irish Famine Memorial in the Making."</a> <em>The Canadian Journal of Irish Studies</em> 33 no. 1 (April 2007): 48-60.
+<br><br>
+Rees, Jim. <em><a href ="https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4006359">Surplus People: From Wicklow to Canada.</a></em> Cork: The Collins Press, 2000.
+<br><br>
+</div>
