@@ -1,33 +1,22 @@
-# Your Title should go in the appropriate place in `index.html`, not here! Title is itself set only in the `<head>` element
-
-## Use headings only if you want to have subsections in your essay
+Throughout the Second World War, many Jewish children sought refuge in convents and other Christian religious institutions across Europe in order to escape deportation by the Nazi regime. These children were given new identities – Christian names and fake documents – which would not arouse suspicion if they were questioned by the German police and were expected to fully immerse themselves in institutional life. <a href="http://go.utlib.ca/cat/6425230">(Suzanne Vromen, p. 11)</a> This usually meant participating in Christian religious practices and occasionally led to the conversion, at least nominally, of the child in question. The children adapted successfully to their Christian identities in order to survive but for some it was more than just a necessity and they truly began to believe in the tenets of Christianity. When the war ended, however, these children were often required to reintegrate into Jewish communities and many struggled to reconcile their newfound beliefs with their Jewish heritage.
 
 <div class="sidepanel">
-              <!-- This is the div where all the popcorn action will hapen -->
-              <div id="popcorn-container">
-              </div>
-            </div>
+  <!-- This is the div where all the popcorn action will happen -->
+  <div id="popcorn-container"></div>
+</div>
 
+<a href="http://memoirs.azrielifoundation.org/recollection#explore-survivor|194">Judy Abrams</a> was one such child. Born in 1937, she was seven years old when her mother placed her in the care of a local Ursuline convent and instructed her to use a different, Christian name. <a href="http://go.utlib.ca/cat/8260951">(Judy Abrams, p. 7)</a> She remained with the nuns for only six months, but she became a very devout little girl during this time and even wanted to become a nun when she grew up. Following the war, Abrams kept going to church every weekend and prayed the rosary on a regular basis. When she was reunited with her family, however, they tried to put an end to her continued commitment to Christianity, enrolling her in a Zionist youth group instead in an attempt to instill in her a sense of her Jewish identity. Over time, she seemed to lose her connection to the Christian faith but never regained her connection to Judaism. Instead, she states that she had “transcended the need for permanent roots” implying that religion no longer played as great a role in her life as it once had. <a href="http://go.utlib.ca/cat/8260951">(Abrams, p. 37)</a>
 
+Perhaps inevitably, children like Abrams became natural targets for the proselytizing efforts of the nuns. They had to learn how to play the part of devout Christian children convincingly and in a very short span of time, understanding that a mistake could mean denouncement, deportation or death and, in order to do so, they were instructed in how and when to pray as Christians. Some of these children were even baptized during their sojourn in the convent, believing that conversion offered greater protection from the Nazis and from suspicious members of the community. <a href="http://go.utlib.ca/cat/6425230">(Vromen, p. 14)</a> The children were not permitted to participate in communion or confession, both of which were key aspects of life in a convent until they had been baptized and exclusion from these rites not only made the children feel like they didn’t belong but could also make people suspicious about their true identities. But while some viewed conversion in purely pragmatic concerns, others took their baptisms very seriously and truly believed in the tenets of the Christian faith. For these children, it often became difficult to reconcile their two very different identities.
 
-Add your content here, including _markup_ of **various kinds**. Now you can just write! But you should be aware of a couple of advanced features of markdown:
-- you can embed HTML directly n a markdown file. This is great if you want to add complex attributes like **classes**, e.g. to your `img` tags so that they display properly.
-  - another use of embedded HTML is for funky javascript function links. I've written a simple function that will seek to a particular time code in seconds.  You can call it like this: `<a href="javascript:seek(75)">seek to 1:15</a>`, but `[seek to 1:15](javascript:seek(75))` won't render properly, so you have to type the whole linke in, as seen here: <a href="#" onclick="javascript:seek(75)"> seek to 1:15</a>.
-  - also, Remarkable supports pandoc-style footnotes, which can be helpful sometimes. Here are some examples of footnotes at work:
+These conversions often caused tensions between the children and their families when they were reunited after the war. This was especially true for those children, like Abrams, who connected with Christianity on an emotional level and who wished to continue practicing the religion when they left the convent. Jewish family members often encouraged the children to abandon the new religion by encouraging them to socialize with other young Jewish people or by using force and destroying symbols of their religiosity or forbidding them from going to church. <a href="http://go.utlib.ca/cat/6425230">(Vromen, p. 23-25)</a> Whatever their tactic, however, most did not encourage their children to continue practicing their adopted faith. This intervention by the immediate or extended family merely compounded the internal conflict which many children already felt when they considered their religious identity.
 
-    Footnote 1 link[^first].
+For children like Judy Abrams who spent all or part of World War Two in hiding in a Christian religious institution, it became difficult to reintegrate into Jewish society after the war. Survival throughout the war years had depended on their ability to adapt, to become someone else, and in many cases the children struggled to reconcile their two identities – the primary distinction being the religious affiliation of each. This effect was compounded in the aftermath of the war as they were reunited with Jewish family members who pressured them to return to their original faith, marking yet another period of confusion regarding their religious identity. While they handled the conflict in different ways – with some continuing to practice Christianity despite the protests of their family and others returning to Judaism or finding a way to bridge the divide between the two – it is evident that the majority of these children struggled with their religious identity at one point or another during the war or its aftermath.
 
-    Footnote 2 link[^second].
+Sources:
 
-    Inline footnote^[Text of inline footnote] definition.
+Abrams, Judy and Eva Felsenburg Marx. <a href="http://go.utlib.ca/cat/8260951"><em>Tenuous Threads/One of the Lucky Ones.</em></a> Toronto: Azrieli Foundation, 2012.
 
-    Duplicated footnote reference[^second].
+Azrieli Foundation. "Judy Abrams." <a href="http://memoirs.azrielifoundation.org/recollection#explore-survivor|194"><em>Re:Collections</em></a> Accessed 29th March 2018.
 
-you can learn more about remarkable on [its github page](https://github.com/jonschlinkert/remarkable), and get a fuller sense of the syntax [in the online demo](https://jonschlinkert.github.io/remarkable/demo/)
-
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
+Vromen, Suzanne. <a href="http://go.utlib.ca/cat/6425230"><em>Hidden Children of the Holocaust: Belgian Nuns and their Daring Rescue of Young Jews from the Nazis.</em></a> Oxford: Oxford University Press, 2008.

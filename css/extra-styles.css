@@ -122,23 +122,70 @@ div.gm-style-iw blockquote {
 
 /* AUDIO PLAYER */
 #media {
-    border: 4px solid #880000;
-    width: 100%;
-    margin: 15px 0;
-    box-shadow: rgba(0,0,0, .5) 0 0 5px;
+  width: 100%;
+  border: 4px solid black;
+  padding-top: 32px;
+  margin-bottom: 15px;
 }
 
 /* SIDEPANEL */
 .sidepanel {
-   margin: 15px;
-   float: right;
+   float: left;
+   padding-right: 15px;
 }
 
 #popcorn-container {
-   border: 4px solid #aa0000;
-   width: 425px;
-   height: 640px;
-   overflow: scroll;
-   background-color: #F4F4F4;
-   padding: 10px;
+  width: 50vh;
+  height: 50vh;
+  border: 4px solid black;
+}
+
+img {
+  height: 49vh;
+  width: 49vh;
+}
+
+#popcorn-container h1.explain {
+  text-decoration: underline;
+  font-family: cursive;
+  font-size: 1.75em;
+  padding-top: 2vh;
+  padding-left: 2vh;
+}
+
+#popcorn-container p.explain {
+  font-family: cursive;
+  font-size: 1.25em;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+#popcorn-container p.intro {
+  font-family: cursive;
+  font-size: 4em;
+  font-style: italic;
+  text-align: center;
+  padding-top: 10vh;
+  color: black;
+}
+
+#popcorn-container p.short {
+  font-family: cursive;
+  font-size: 4em;
+  font-style: italic;
+  text-align: center;
+  padding-top: 6vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+#popcorn-container p.long {
+  font-family: cursive;
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
+  padding-top: 6vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
 }
